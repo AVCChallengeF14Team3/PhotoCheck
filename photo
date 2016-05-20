@@ -26,7 +26,8 @@ int open_screen_stream();
 
 for(i = 0; i < 16; i++){
 whiteValue = get_pixel(i * 20, 120, 3);
-if(whiteValue < 127){
+if(whiteValue < 90){
+//WhiteOrValue
 whiteOrBlack[i] = 1;
 }
 else{
@@ -49,7 +50,7 @@ printf("%f%n", centerOfWhite);
 printf("%i%n", startOfWhite);
 printf("%i%n", endOfWhite);
 
-//If the Robot is centered then the value of center of White should be == 17164
+//If the Robot is centered then the value of center of White should be == 8
 
 float errorValue = centerOfWhite - 7.5;
 
